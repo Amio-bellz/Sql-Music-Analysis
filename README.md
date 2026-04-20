@@ -21,3 +21,6 @@ This project analyzes customer music purchase behavior across Europe and America
 ## 📸 Artist Revenue
 
 ![Artist Revenue](images/artist_revenue.jpg)
+
+## 📸 Country Revenue
+![Country Revenue](images/revenue_by_country.jpg)
