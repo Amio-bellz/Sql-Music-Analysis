@@ -31,7 +31,7 @@ Select
 	Join 
 		Invoice I on I.invoiceid = Il.InvoiceId
 	Where 
-		datename(Month, I.Invoicedate) in ('April','June','Sptember','December')
+		datename(Month, I.Invoicedate) in ('April','June','September','December')
 	Group by 
 		A.Name, 
 		Al.Title,
@@ -57,7 +57,9 @@ Join
 Join 
 	Invoiceline il on i.invoiceid = il.InvoiceId
 Group by 
-	concat(C.firstname,' ', C.lastname), Il.Quantity
+	concat(C.firstname,' ', C.lastname), 
+Order by
+	Il.Quantity
 
 
 --- Specific Countries Revenue
